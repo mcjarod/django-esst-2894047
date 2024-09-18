@@ -38,13 +38,13 @@ DATABASES = {
 }
 
 # Verify BD connection
-try:
-    conn = psycopg2.connect(
-        dbname=conn_str_params['dbname'],
-        user=conn_str_params['user'],
-        password=conn_str_params['password'],
-        host=conn_str_params['host']
-    )
-    print("Successful PostgreSQL DB connection")
-except Exception as e:
-    print(f"Error to conect to PostgreSQL DB: {e}")
+# try:
+#     conn = psycopg2.connect(
+#         dbname=conn_str_params['dbname'],
+#         user=conn_str_params['user'],
+#         password=conn_str_params['password'],
+#         host=conn_str_params['host']
+#     )
+#     print("Successful PostgreSQL DB connection")
+# except Exception as e:
+#     print(f"Error to conect to PostgreSQL DB: {e}")
